@@ -1,0 +1,130 @@
+{
+  "name": "jsg-worktree-env-configurator",
+  "displayName": "JSG Worktree Env Configurator",
+  "description": "Auto-configure .env files for Git worktree projects, copying from the main worktree and adjusting APP_URL",
+  "version": "0.1.0",
+  "publisher": "JeffersonGoncalves",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeffersongoncalves/worktree-env-configurator-vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeffersongoncalves/worktree-env-configurator-vscode/issues"
+  },
+  "homepage": "https://github.com/jeffersongoncalves/worktree-env-configurator-vscode#readme",
+  "keywords": [
+    "git",
+    "worktree",
+    "worktrees",
+    "env",
+    "laravel"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "SCM Providers",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "worktreeEnv.configure",
+        "title": "Configure .env for Worktree",
+        "category": "Worktree Env"
+      },
+      {
+        "command": "worktreeEnv.openEnv",
+        "title": "Open .env in Editor",
+        "category": "Worktree Env"
+      },
+      {
+        "command": "worktreeEnv.refresh",
+        "title": "Refresh Status",
+        "category": "Worktree Env"
+      },
+      {
+        "command": "worktreeEnv.resetIgnored",
+        "title": "Reset Ignored Projects",
+        "category": "Worktree Env"
+      },
+      {
+        "command": "worktreeEnv.showActions",
+        "title": "Show Worktree Env Actions",
+        "category": "Worktree Env"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "worktreeEnv.configure"
+        },
+        {
+          "command": "worktreeEnv.openEnv"
+        },
+        {
+          "command": "worktreeEnv.refresh"
+        },
+        {
+          "command": "worktreeEnv.resetIgnored"
+        },
+        {
+          "command": "worktreeEnv.showActions",
+          "when": "false"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Worktree Env Configurator",
+      "properties": {
+        "worktreeEnv.autoConfigureOnOpen": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show a notification to configure .env when a worktree is detected on open"
+        },
+        "worktreeEnv.copyTestingEnv": {
+          "type": "boolean",
+          "default": true,
+          "description": "Also copy and configure .env.testing if it exists in the main worktree"
+        },
+        "worktreeEnv.openEnvInEditor": {
+          "type": "boolean",
+          "default": true,
+          "description": "Open .env in the editor after configuring it"
+        },
+        "worktreeEnv.appUrlPattern": {
+          "type": "string",
+          "default": "",
+          "description": "Custom APP_URL pattern using {folder} placeholder. Empty = auto-detect from main .env"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "pretest": "npm run compile-tests",
+    "test": "node --test out/test/*.test.js",
+    "lint": "eslint src",
+    "vscode:prepublish": "npm run package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "esbuild": "^0.25.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}
