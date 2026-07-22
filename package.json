@@ -13,6 +13,7 @@
     "url": "https://github.com/jeffersongoncalves/worktree-env-configurator-vscode/issues"
   },
   "homepage": "https://github.com/jeffersongoncalves/worktree-env-configurator-vscode#readme",
+  "icon": "resources/icon.png",
   "keywords": [
     "git",
     "worktree",
