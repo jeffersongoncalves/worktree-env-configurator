@@ -4,8 +4,8 @@
 
 **Worktree Env Configurator** detects when a project is opened as a [Git worktree](https://git-scm.com/docs/git-worktree) and automatically configures the `.env` file by copying it from the main worktree and adjusting `APP_URL` to match the worktree folder name.
 
-- **Homepage**: [GitHub](https://github.com/jeffersongoncalves/worktree-env-configurator-vscode)
-- **Issues**: [GitHub Issues](https://github.com/jeffersongoncalves/worktree-env-configurator-vscode/issues)
+- **Homepage**: [GitHub](https://github.com/jeffersongoncalves/worktree-env-configurator)
+- **Issues**: [GitHub Issues](https://github.com/jeffersongoncalves/worktree-env-configurator/issues)
 
 This is a VS Code port of the JetBrains plugin [worktree-env-plugin](https://github.com/jeffersongoncalves/worktree-env-plugin).
 
@@ -100,8 +100,8 @@ Clicking "Ignore this project" on the notification stores the workspace path in 
 ## Building from Source
 
 ```bash
-git clone git@github.com:jeffersongoncalves/worktree-env-configurator-vscode.git
-cd worktree-env-configurator-vscode
+git clone git@github.com:jeffersongoncalves/worktree-env-configurator.git
+cd worktree-env-configurator
 
 npm install
 
