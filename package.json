@@ -118,12 +118,12 @@
   },
   "devDependencies": {
     "@types/vscode": "^1.85.0",
-    "@types/node": "^20.11.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.0.0",
-    "esbuild": "^0.25.0",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3"
+    "@types/node": "^26.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.67.0",
+    "@typescript-eslint/parser": "^8.67.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.8.1",
+    "typescript": "^7.0.2"
   },
   "allowScripts": {
     "esbuild@0.25.12": true
