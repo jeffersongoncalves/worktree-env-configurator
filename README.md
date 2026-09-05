@@ -1,5 +1,7 @@
 # Worktree Env Configurator
 
+![Worktree Env Configurator](banners/worktree-env-configurator.png)
+
 > Auto-configure `.env` files for Git worktree projects in VS Code.
 
 **Worktree Env Configurator** detects when a project is opened as a [Git worktree](https://git-scm.com/docs/git-worktree) and automatically configures the `.env` file by copying it from the main worktree and adjusting `APP_URL` to match the worktree folder name.
