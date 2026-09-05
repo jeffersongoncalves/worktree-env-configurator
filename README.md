@@ -1,6 +1,6 @@
-# Worktree Env Configurator
-
 ![Worktree Env Configurator](banners/worktree-env-configurator.png)
+
+# Worktree Env Configurator
 
 > Auto-configure `.env` files for Git worktree projects in VS Code.
 
