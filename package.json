@@ -117,12 +117,12 @@
     "vscode:prepublish": "npm run package"
   },
   "devDependencies": {
-    "@types/vscode": "^1.134.0",
-    "@types/node": "^26.4.1",
-    "@typescript-eslint/eslint-plugin": "^8.69.0",
+    "@types/vscode": "^1.136.0",
+    "@types/node": "^26.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.70.0",
     "@typescript-eslint/parser": "^8.67.0",
     "esbuild": "^0.28.2",
-    "eslint": "^10.9.1",
+    "eslint": "^10.10.0",
     "typescript": "^7.0.2"
   },
   "allowScripts": {
