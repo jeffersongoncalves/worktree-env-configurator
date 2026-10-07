@@ -26,3 +26,7 @@ updates:
       npm-deps:
         patterns:
           - '*'
+    ignore:
+      # typescript-eslint does not support TypeScript 7 yet; npm ci fails on the peer range.
+      - dependency-name: typescript
+        versions: ['>=7']
