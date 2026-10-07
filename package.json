@@ -7,12 +7,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jeffersongoncalves/worktree-env-configurator.git"
+    "url": "https://github.com/jeffersongoncalves/worktree-env-configurator-vscode.git"
   },
   "bugs": {
-    "url": "https://github.com/jeffersongoncalves/worktree-env-configurator/issues"
+    "url": "https://github.com/jeffersongoncalves/worktree-env-configurator-vscode/issues"
   },
-  "homepage": "https://github.com/jeffersongoncalves/worktree-env-configurator#readme",
+  "homepage": "https://github.com/jeffersongoncalves/worktree-env-configurator-vscode#readme",
   "icon": "resources/icon.png",
   "keywords": [
     "git",
